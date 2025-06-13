@@ -15,7 +15,7 @@ colunas_modelo = joblib.load("models/colunas_modelo.joblib")
 
 # Carrega dados do XML e gera lista de bairros
 df_bairros = carregar_imoveis_xml()
-lista_bairros = df_bairros['bairro'].dropna().unique().tolist()
+lista_bairros = sorteddf_bairros['bairro'].dropna().unique().tolist()
 
 # Restrito a Goiás, Goiânia
 estados_cidades_bairros = {
